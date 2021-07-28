@@ -2,7 +2,7 @@
 
 @section('content')
 
- <div class="card-header">ユーザー登録</div>
+ <div class="card-header">ユーザー変更</div>
 
                 <div class="card-body">
                     @if (session('status'))
@@ -11,7 +11,7 @@
                         </div>
                     @endif
 
-                下記からユーザー登録をお願いします。
+           
                 </div>
             </div>
             <form action="{{ url('teacher/newinfo') }}" method="POST" class="form-horizontal">

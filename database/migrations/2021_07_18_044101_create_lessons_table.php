@@ -16,8 +16,9 @@ class CreateLessonsTable extends Migration
         Schema::create('lessons_', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('teacher_id')->uniqe();
-            $table->string('title');
-            $table->text('coment'); 
+            $table->string('title')->default('未設定');
+            $table->text('coment')->default('未設定');
+            $table->integer('price')->default(0);
             $table->timestamps();
         });
     }
@@ -29,6 +30,6 @@ class CreateLessonsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('lessons_');
+        Schema::dropIfExists('lessons');
     }
 }

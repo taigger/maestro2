@@ -19,10 +19,10 @@ class CreateTeachersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->string('sex');
-            $table->string('instrament');
-            $table->string('state');
-            $table->text('introsuction');
+            $table->string('sex')->default('未設定');
+            $table->string('instrament')->default('未設定');
+            $table->string('state')->default('未設定');
+            $table->text('introsuction')->default('未設定');
             $table->rememberToken();
             $table->timestamps();
         });

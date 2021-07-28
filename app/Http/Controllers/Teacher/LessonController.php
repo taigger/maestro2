@@ -67,7 +67,8 @@ class LessonController extends Controller
      */
    
      public function show(lesson $lessons)
-    {
+    {　　
+         $id = Auth::id();
          $lesson = Lesson::find($id);
         return view('lesson', ['lesson' => $lesson]);
     }

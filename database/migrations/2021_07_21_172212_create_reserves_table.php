@@ -17,9 +17,9 @@ class CreateReservesTable extends Migration
             $table->bigIncrements('id');
             $table->integer('lesson_id');
             $table->integer('user_id');
-            $table->integer('finish_state');
-            $table->integer('star');
-            $table->string('coment',100);
+            $table->integer('finish_state')->nullable();
+            $table->integer('star')->nullable();
+            $table->string('coment',100)->nullable();
             $table->timestamps();
         });
     }

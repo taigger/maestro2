@@ -13,7 +13,7 @@ class CreateLessonsTable extends Migration
      */
     public function up()
     {
-        Schema::create('lessons_', function (Blueprint $table) {
+        Schema::create('lessons', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('teacher_id')->uniqe();
             $table->string('title')->default('未設定');

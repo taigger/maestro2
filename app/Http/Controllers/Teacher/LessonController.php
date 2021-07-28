@@ -67,8 +67,7 @@ class LessonController extends Controller
      */
    
      public function show(lesson $lessons)
-    {　　
-         $id = Auth::id();
+    {
          $lesson = Lesson::find($id);
         return view('lesson', ['lesson' => $lesson]);
     }
@@ -103,7 +102,7 @@ class LessonController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Lesson $id)
     {
     $lesson = Lesson::findOrFail($id);
     $lesson->delete();       //追加

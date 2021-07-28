@@ -17,7 +17,7 @@ class CreateLessonsTable extends Migration
             $table->bigIncrements('id');
             $table->string('teacher_id')->uniqe();
             $table->string('title')->default('未設定');
-            $table->text('coment')->default('未設定');
+            $table->string('coment')->default('未設定');
             $table->integer('price')->default(0);
             $table->timestamps();
         });

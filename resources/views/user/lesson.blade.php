@@ -31,7 +31,7 @@
         <h6 class="card-subtitle mb-2 text-muted">{{$lesson->instrament}}</h6>
         <p class="card-text">{{$lesson->price}}円</p>
         <p class="card-text">{{$lesson->coment}}</p>
-        <p  class="card-text" ><a href="{{url('user/add',$teacher->id)}}">メッセージを送信する</a></p>
+        <!--<p  class="card-text" ><a href="{{url('user/add',$teacher->id)}}">メッセージを送信する</a></p>-->
          <p><a href="{{url('user/reserve',$lesson->id)}}">予約する</a></p>
         <div>
         <!--<form action="ethod="POST">-->

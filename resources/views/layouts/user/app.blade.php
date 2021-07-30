@@ -67,10 +67,10 @@
                                         @csrf
                                     </form>
                                 </div>
-                            </li>
-                               <li class="nav-item">
-                                <a class="nav-link" href="{{url('user/showreserve') }}">予約状況確認</a>
-                            </li>
+                            <!--</li>-->
+                            <!--   <li class="nav-item">-->
+                            <!--    <a class="nav-link" href="]\">予約状況確認</a>-->
+                            <!--</li>-->
                         @endunless
                     </ul>
                 </div>

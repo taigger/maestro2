@@ -37,6 +37,12 @@
             削除
         </button>
     </form>
+        <form action="{{ url('teacher/showreserve/'.$lesson->id) }}" method="GET">
+        {{ csrf_field() }}
+        <button type="submit" class="btn btn-success">
+            予約確認
+        </button>
+    </form>
     </div>
     </div>
     </div>

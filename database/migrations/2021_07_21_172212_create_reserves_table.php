@@ -17,9 +17,12 @@ class CreateReservesTable extends Migration
             $table->bigIncrements('id');
             $table->integer('lesson_id');
             $table->integer('user_id');
-            $table->integer('finish_state')->nullable();
-            $table->integer('star')->nullable();
-            $table->string('coment',100)->nullable();
+            $table->integer('teacher_id');
+            $table->string('reserve_mail');
+            $table->string('reserve_name');
+            $table->integer('finish_state')->default(0);
+            $table->integer('star')->default(0);
+            $table->string('coment',100)->default('未設定');
             $table->timestamps();
         });
     }

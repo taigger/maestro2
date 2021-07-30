@@ -71,6 +71,9 @@ Route::namespace('Teacher')->prefix('teacher')->name('teacher.')->group(function
         Route::post('newlesson','LessonController@store');
         Route::get('add', 'CommentController@showform')->name('add');
         Route::post('add','CommentController@add')->name('add');
+        // 予約表示
+         Route::get('showreserve/{showreserve}','ReserveController@show');
+         
         
         // レッスン削除
         Route::delete('lessondelete/{lesson}','LessonController@destroy');

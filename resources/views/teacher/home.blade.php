@@ -17,7 +17,7 @@
             </div>
             <div class="card">
                 <p><a href="{{url('teacher/newlesson') }}">レッスン情報を登録する</a></p>
-                <p><a href="{{url('teacher/newinfo') }}">ユーザー情報を変更する</a></p>
+                <p><a href="{{url('teacher/newinfo') }}">ユーザー情報を登録する</a></p>
                  <!--<p><a href="{{url('teacher/add') }}">チャットを表示する</a></p>-->
             </div>
         </div>

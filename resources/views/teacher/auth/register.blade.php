@@ -61,7 +61,7 @@
                             </div>
                         </div>
                          <div class="mb-3">
-            　　 <labelfor="exampleFormControlTextarea1" class="form-label">性別</label>
+            　　 <label for="exampleFormControlTextarea1" class="form-label">性別</label>
             　　<select name="sex" class="form-control">
                 　<option hidden>選択してください</option>
                   <option value="男性">男性</option>

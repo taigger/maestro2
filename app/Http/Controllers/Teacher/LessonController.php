@@ -102,9 +102,8 @@ class LessonController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Lesson $id)
+    public function destroy(Lesson $lesson)
     {
-    $lesson = Lesson::findOrFail($id);
     $lesson->delete();       //追加
     return redirect('teacher/home');  //追加
     }

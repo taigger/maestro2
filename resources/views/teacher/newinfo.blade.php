@@ -27,7 +27,7 @@
                 </div>
                   <div class="mb-3">
                  <label for="exampleFormControlTextarea1" class="form-label">レッスン可能楽器</label>
-                 <select name="intrament" class="form-control" multiple>
+                 <select name="instrament" class="form-control" multiple>
                   <option hidden>楽器</option>
                   <option value="violin">violin</option>
                   <option value="viola">viola</option>

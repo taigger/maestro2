@@ -17,7 +17,7 @@ class CreateReservesTable extends Migration
             $table->bigIncrements('id');
             $table->integer('lesson_id');
             $table->integer('user_id');
-            $table->integer('teacher_id');
+            $table->integer('teacher_id')->default(0);
             $table->string('reserve_mail');
             $table->string('reserve_name');
             $table->integer('finish_state')->default(0);
